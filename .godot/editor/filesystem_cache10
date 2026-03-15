@@ -1,10 +1,11 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1773574669
+::res://::1773577457
 icon.svg::CompressedTexture2D::5415566305864289889::1773571265::1773574671::1::::<><><>0<>0<>f1ce52f1481b8f5a07a9a863772796bd<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 README.md::TextFile::-1::1773571602::0::1::::<><><>0<>0<><>::
 ::res://Materials/::1773574273
 ::res://Prefabs/::1773574275
-::res://Scenes/::1773574623
-TestScene1.tscn::PackedScene::8014891378140492160::1773574582::0::1::::<><><>0<>0<><>::
-::res://Scripts/::1773574623
-PlayerController.cs::CSharpScript::9144009840260900772::1773574602::0::1::::<><><>0<>0<><>::
+::res://Scenes/::1773577534
+TestScene1.tscn::PackedScene::8014891378140492160::1773577608::0::1::::<><><>0<>0<><>::uid://d3jorhcin3t6k::::res://Scripts/PlayerController.cs<>uid://b4q3oyt2mm8ay::::res://Scripts/CameraRig3d.cs
+::res://Scripts/::1773577387
+CameraRig3d.cs::CSharpScript::4456653561328115804::1773577529::0::1::::<><><>0<>0<><>::
+PlayerController.cs::CSharpScript::9144009840260900772::1773577398::0::1::::<>RigidBody3D<><>0<>0<><>::

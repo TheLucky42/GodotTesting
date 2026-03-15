@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FAFO-ing")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7a9c1dc60ec3c40b61a6a4a39f9cf818142a62f4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+65daa4f26378e62f4d18a97b72aa1090b6b170d9")]
 [assembly: System.Reflection.AssemblyProductAttribute("FAFO-ing")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FAFO-ing")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

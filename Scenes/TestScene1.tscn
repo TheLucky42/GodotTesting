@@ -1,27 +1,48 @@
 [gd_scene format=3 uid="uid://dmgqdcbwrq3s3"]
 
 [ext_resource type="Script" uid="uid://d3jorhcin3t6k" path="res://Scripts/PlayerController.cs" id="1_8lor2"]
+[ext_resource type="Script" uid="uid://b4q3oyt2mm8ay" path="res://Scripts/CameraRig3D.cs" id="2_vab8d"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_31lxn"]
 
 [node name="TestScene1" type="Node3D" unique_id=1899761045]
 
-[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=971618955]
-use_collision = true
-collision_mask = 0
-size = Vector3(10, 0.5, 10)
-
-[node name="RigidBody3D" type="RigidBody3D" parent="." unique_id=543797300]
+[node name="Player" type="RigidBody3D" parent="." unique_id=543797300]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.8920286, 0)
 collision_layer = 0
+can_sleep = false
 script = ExtResource("1_8lor2")
+CameraRigPath = NodePath("../CameraRig3D")
+TorqueForce = 5.0
+MaxLinearSpeed = 10.0
+MaxAngularSpeed = 20.0
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D" unique_id=1380924434]
+[node name="PlayerCollision" type="CollisionShape3D" parent="Player" unique_id=1380924434]
 shape = SubResource("SphereShape3D_31lxn")
 
-[node name="CSGSphere3D" type="CSGSphere3D" parent="RigidBody3D" unique_id=1120429946]
+[node name="PlayerMesh" type="CSGSphere3D" parent="Player" unique_id=1120429946]
 radial_segments = 20
 rings = 20
 
-[node name="Camera3D" type="Camera3D" parent="RigidBody3D" unique_id=2102257519]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5.7076454)
+[node name="CSGBox3D" type="CSGBox3D" parent="Player" unique_id=373840498]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+size = Vector3(0.1, 0.1, 0.1)
+
+[node name="CameraRig3D" type="Node3D" parent="." unique_id=111036406]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.8215952, 0)
+script = ExtResource("2_vab8d")
+PlayerPath = NodePath("../Player")
+FollowSpeed = 6.0
+RotationSpeed = 3.0
+MinTurnSpeed = 1.5
+
+[node name="Camera3D" type="Camera3D" parent="CameraRig3D" unique_id=2102257519]
+transform = Transform3D(1, 0, 0, 0, 0.9370323, 0.3492427, 0, -0.3492427, 0.9370323, 0, 2.5, 3)
+
+[node name="Surface" type="CSGBox3D" parent="." unique_id=971618955]
+use_collision = true
+collision_mask = 0
+size = Vector3(100, 0.5, 100)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=823674692]
+transform = Transform3D(1, 0, 0, 0, 0.44552606, 0.895269, 0, -0.895269, 0.44552606, 0, 4.1708546, 0)
