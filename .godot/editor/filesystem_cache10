@@ -1,4 +1,10 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1773574150
-NewScript.cs::CSharpScript::2264727202868291983::1773573884::0::1::::<><><>0<>0<><>::
+::res://::1773574669
+icon.svg::CompressedTexture2D::5415566305864289889::1773571265::1773574671::1::::<><><>0<>0<>f1ce52f1481b8f5a07a9a863772796bd<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 README.md::TextFile::-1::1773571602::0::1::::<><><>0<>0<><>::
+::res://Materials/::1773574273
+::res://Prefabs/::1773574275
+::res://Scenes/::1773574623
+TestScene1.tscn::PackedScene::8014891378140492160::1773574582::0::1::::<><><>0<>0<><>::
+::res://Scripts/::1773574623
+PlayerController.cs::CSharpScript::9144009840260900772::1773574602::0::1::::<><><>0<>0<><>::

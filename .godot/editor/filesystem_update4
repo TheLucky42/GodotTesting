@@ -2,3 +2,5 @@ res://Scripts/FileToSaveFolder.txt
 res://Scenes/FileToSaveFolder.txt
 res://Prefabs/FileToSaveFolder.txt
 res://Materials/FileToSaveFolder.txt
+res://Scenes/TestScene1.tscn
+res://Scripts/PlayerController.cs
